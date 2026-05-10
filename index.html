@@ -620,16 +620,19 @@
               <span class="proj-badge badge-live">Em produção</span>
             </div>
             <p class="proj-desc">
-              Dashboard interno de KPIs e produtividade consumindo a Jira Cloud API em tempo real.
-              Autenticação JWT, filtros por período e exportação de dados. Usado diariamente
-              pela equipe de analistas na HidroMares by SGS.
+              Cada analista visualiza individualmente seus chamados por estágio (Em aberto, Em andamento,
+              Aguardando, Parado, Concluído), facilitando o controle de SLA sem precisar navegar pelo Jira.
+              O sistema identifica o solicitante de cada chamado para validar se o que foi executado
+              corresponde ao que foi pedido, com alerta para o prazo de 7 dias em "Aguardando Aceitação".
+              Gráficos de volume diário (criados vs. concluídos) e horas registradas por período ajudam
+              gestores a acompanhar produtividade em tempo real.
             </p>
             <div class="proj-stack">
               <span class="tag">React</span>
               <span class="tag">FastAPI</span>
               <span class="tag">PostgreSQL</span>
               <span class="tag">JWT</span>
-              <span class="tag">Jira API</span>
+              <span class="tag">Jira Cloud API</span>
             </div>
             <div class="proj-links">
               <span class="proj-link-muted">
@@ -668,17 +671,20 @@
           <article class="proj-card reveal">
             <div class="proj-header">
               <span class="proj-name">Gastos Fácil</span>
-              <span class="proj-badge badge-dev">Em desenvolvimento</span>
+              <span class="proj-badge badge-dev">Lançamento Play Store previsto</span>
             </div>
             <p class="proj-desc">
-              App nativo Android para controle de compras no mercado. Scanner de código de barras,
-              sessão de compras ativa, rastreamento de inflação por produto ao longo do tempo
-              e exportação CSV com compartilhamento nativo. Google Auth + backend REST com Prisma.
+              App Android nativo com dois módulos: compras no mercado com scanner de código de barras
+              (registra itens, rastreia a variação de preço por produto ao longo do tempo e exporta CSV)
+              e controle de despesas gerais por categoria e subcategoria — Veículo (Gasolina, Uber/99,
+              Ônibus, Manutenção, Pedágio), Refeição, Moradia e Extras. Dashboard mensal consolida
+              compras, inflação por item e total de despesas.
             </p>
             <div class="proj-stack">
               <span class="tag">Java</span>
               <span class="tag">Android Studio</span>
               <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
               <span class="tag">Prisma</span>
               <span class="tag">PostgreSQL</span>
               <span class="tag">Google Auth</span>
